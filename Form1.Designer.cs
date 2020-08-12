@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
-            this.lblusername = new System.Windows.Forms.Label();
-            this.lblpassword = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -118,29 +118,29 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // lblusername
+            // lblUsername
             // 
-            this.lblusername.AutoSize = true;
-            this.lblusername.BackColor = System.Drawing.Color.Transparent;
-            this.lblusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusername.ForeColor = System.Drawing.Color.Red;
-            this.lblusername.Location = new System.Drawing.Point(559, 221);
-            this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(20, 25);
-            this.lblusername.TabIndex = 7;
-            this.lblusername.Text = "*";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.Red;
+            this.lblUsername.Location = new System.Drawing.Point(558, 221);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(20, 25);
+            this.lblUsername.TabIndex = 7;
+            this.lblUsername.Text = "*";
             // 
-            // lblpassword
+            // lblPassword
             // 
-            this.lblpassword.AutoSize = true;
-            this.lblpassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpassword.ForeColor = System.Drawing.Color.Red;
-            this.lblpassword.Location = new System.Drawing.Point(559, 276);
-            this.lblpassword.Name = "lblpassword";
-            this.lblpassword.Size = new System.Drawing.Size(20, 25);
-            this.lblpassword.TabIndex = 8;
-            this.lblpassword.Text = "*";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.ForeColor = System.Drawing.Color.Red;
+            this.lblPassword.Location = new System.Drawing.Point(558, 278);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(20, 25);
+            this.lblPassword.TabIndex = 8;
+            this.lblPassword.Text = "*";
             // 
             // Form1
             // 
@@ -148,8 +148,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sudhir_Final_Project.Properties.Resources.adult_1867665_1280;
             this.ClientSize = new System.Drawing.Size(766, 543);
-            this.Controls.Add(this.lblpassword);
-            this.Controls.Add(this.lblusername);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -174,8 +174,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label lblusername;
-        private System.Windows.Forms.Label lblpassword;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
     }
 }
 
