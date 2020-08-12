@@ -10,7 +10,7 @@ namespace Sudhir_Final_Project.Classes
 {
     class DB_CONNECTION
     {
-        MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=sudhir_project");
+        MySqlConnection connection = new MySqlConnection("datasource = localhost;port = 3306;username = root;password =;database=sudhir_project");
 
         // get the connection
         public MySqlConnection getConnection

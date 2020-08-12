@@ -37,6 +37,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
+            this.lblinvaliddetails = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +74,7 @@
             this.btnlogin.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.Location = new System.Drawing.Point(198, 341);
+            this.btnlogin.Location = new System.Drawing.Point(198, 376);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(354, 39);
             this.btnlogin.TabIndex = 3;
@@ -142,12 +143,25 @@
             this.lblPassword.TabIndex = 8;
             this.lblPassword.Text = "*";
             // 
-            // Form1
+            // lblinvaliddetails
+            // 
+            this.lblinvaliddetails.AutoSize = true;
+            this.lblinvaliddetails.BackColor = System.Drawing.Color.Transparent;
+            this.lblinvaliddetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinvaliddetails.ForeColor = System.Drawing.Color.Red;
+            this.lblinvaliddetails.Location = new System.Drawing.Point(351, 323);
+            this.lblinvaliddetails.Name = "lblinvaliddetails";
+            this.lblinvaliddetails.Size = new System.Drawing.Size(217, 20);
+            this.lblinvaliddetails.TabIndex = 9;
+            this.lblinvaliddetails.Text = "Invalid Username/Password";
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sudhir_Final_Project.Properties.Resources.adult_1867665_1280;
             this.ClientSize = new System.Drawing.Size(766, 543);
+            this.Controls.Add(this.lblinvaliddetails);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.btnClose);
@@ -158,7 +172,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "LoginForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,6 +190,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblinvaliddetails;
     }
 }
 

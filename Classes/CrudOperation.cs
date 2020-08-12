@@ -16,25 +16,25 @@ namespace Sudhir_Final_Project.Classes
 
 
         //exe. query
-        public Boolean ExecQuery(MySqlCommand command)
-        {
-            command.Connection = connection.getConnection;
+        //public Boolean ExecQuery(MySqlCommand command)
+        //{
+        //    command.Connection = connection.getConnection;
 
-            connection.openConnection();
+        //    connection.openConnection();
 
-            if (command.ExecuteNonQuery() == 1)
-            {
-                connection.closeConnection();
-                return true;
-            }
-            else
-            {
-                connection.closeConnection();
-                return false;
-            }
-        }
+        //    if (command.ExecuteNonQuery() == 1)
+        //    {
+        //        connection.closeConnection();
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        connection.closeConnection();
+        //        return false;
+        //    }
+        //}
 
-        // get data
+        // get data in table format
         public DataTable getData(MySqlCommand command)
         {
 
