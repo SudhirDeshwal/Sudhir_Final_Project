@@ -17,6 +17,9 @@ namespace Sudhir_Final_Project
         public LoginForm()
         {
             InitializeComponent();
+            // set the label visibility to false
+            lblUsername.Visible = false;
+            lblPassword.Visible = false;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -47,7 +50,7 @@ namespace Sudhir_Final_Project
                 else
                 {
 
-                    MessageBox.Show("no");
+                    lblinvaliddetails.Visible = true;
 
                 }
 
@@ -59,9 +62,9 @@ namespace Sudhir_Final_Project
         // check if the username or password are empty
         public Boolean checkFields()
         {
-            // set the label visibility to false
-            lblUsername.Visible = false;
-            lblPassword.Visible = false;
+            //// set the label visibility to false
+            //lblUsername.Visible = false;
+            //lblPassword.Visible = false;
 
             if (txtUsername.Text.Trim().Equals("") && txtPassword.Text.Trim().Equals(""))
             {

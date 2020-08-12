@@ -154,6 +154,7 @@
             this.lblinvaliddetails.Size = new System.Drawing.Size(217, 20);
             this.lblinvaliddetails.TabIndex = 9;
             this.lblinvaliddetails.Text = "Invalid Username/Password";
+            this.lblinvaliddetails.Visible = false;
             // 
             // LoginForm
             // 
