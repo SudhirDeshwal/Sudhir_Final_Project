@@ -1,6 +1,6 @@
 ﻿namespace Sudhir_Final_Project
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
