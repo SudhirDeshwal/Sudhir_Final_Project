@@ -16,5 +16,15 @@ namespace Sudhir_Final_Project
         {
             InitializeComponent();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
