@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sudhir_Final_Project.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,22 @@ namespace Sudhir_Final_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+           //  Application.Run(new LoginForm());
+
+
+        LoginForm loginF = new LoginForm();
+
+            if (loginF.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Home());
+            }
+            else
+            {
+                Application.Exit();
+
+
+            }
         }
     }
 }
+

@@ -14,6 +14,8 @@ namespace Sudhir_Final_Project
 {
     public partial class LoginForm : Form
     {
+
+        public bool Authenticated = false;
         public LoginForm()
         {
             InitializeComponent();
@@ -21,6 +23,12 @@ namespace Sudhir_Final_Project
             lblUsername.Visible = false;
             lblPassword.Visible = false;
         }
+
+        //public bool authenticated
+        //{
+        //    get { return Authenticated; }
+        //    set { Authenticated = value; }
+        //}
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -45,53 +53,57 @@ namespace Sudhir_Final_Project
 
                 if (table.Rows.Count > 0)
                 {
-                    MessageBox.Show("yes");
+                    this.DialogResult = DialogResult.OK;
                 }
                 else
                 {
 
                     lblinvaliddetails.Visible = true;
+                    Authenticated = false;
 
                 }
 
 
+                }
+
             }
+
+            // check if the username or password are empty
+            public Boolean checkFields()
+            {
+                //// set the label visibility to false
+                //lblUsername.Visible = false;
+                //lblPassword.Visible = false;
+
+                if (txtUsername.Text.Trim().Equals("") && txtPassword.Text.Trim().Equals(""))
+                {
+                    lblUsername.Visible = true;
+                    lblPassword.Visible = true;
+                    return false;
+                }
+
+                else if (txtUsername.Text.Trim().Equals(""))
+                {
+                    lblUsername.Visible = true;
+                    return false;
+                }
+                else if (txtPassword.Text.Trim().Equals(""))
+                {
+                    lblPassword.Visible = true;
+                    return false;
+                }
+
+                else
+                {
+                    return true;
+                }
+            }
+
+
+
 
         }
-
-        // check if the username or password are empty
-        public Boolean checkFields()
-        {
-            //// set the label visibility to false
-            //lblUsername.Visible = false;
-            //lblPassword.Visible = false;
-
-            if (txtUsername.Text.Trim().Equals("") && txtPassword.Text.Trim().Equals(""))
-            {
-                lblUsername.Visible = true;
-                lblPassword.Visible = true;
-                return false;
-            }
-
-            else if (txtUsername.Text.Trim().Equals(""))
-            {
-                lblUsername.Visible = true;
-                return false;
-            }
-            else if (txtPassword.Text.Trim().Equals(""))
-            {
-                lblPassword.Visible = true;
-                return false;
-            }
-
-            else
-            {
-                return true;
-            }
-        }
-
-
-
-
     }
-}
+
+
+

@@ -67,6 +67,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(197, 30);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnlogin
             // 
@@ -111,7 +112,7 @@
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(705, 0);
+            this.btnClose.Location = new System.Drawing.Point(776, 1);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(61, 47);
             this.btnClose.TabIndex = 6;
@@ -161,7 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sudhir_Final_Project.Properties.Resources.adult_1867665_1280;
-            this.ClientSize = new System.Drawing.Size(766, 543);
+            this.ClientSize = new System.Drawing.Size(838, 502);
             this.Controls.Add(this.lblinvaliddetails);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
