@@ -99,10 +99,18 @@ namespace Sudhir_Final_Project
                 }
             }
 
+       
 
-
-
+        private void txtUsername_Enter(object sender, EventArgs e)
+        {
+            lblinvaliddetails.Visible = false;
         }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            lblinvaliddetails.Visible = false;
+        }
+    }
     }
 
 

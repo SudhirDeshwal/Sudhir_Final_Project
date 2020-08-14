@@ -59,6 +59,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(197, 30);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Enter);
             // 
             // txtPassword
             // 
@@ -68,6 +69,7 @@
             this.txtPassword.Size = new System.Drawing.Size(197, 30);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             // 
             // btnlogin
             // 

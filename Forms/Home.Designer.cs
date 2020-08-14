@@ -41,8 +41,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 53);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Property";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -50,7 +51,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 53);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "Property owner";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -59,7 +60,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(143, 63);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
+            this.button3.Text = "Property type";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4

@@ -15,24 +15,24 @@ namespace Sudhir_Final_Project.Classes
         DB_CONNECTION connection = new DB_CONNECTION();
 
 
-        //exe. query
-        //public Boolean ExecQuery(MySqlCommand command)
-        //{
-        //    command.Connection = connection.getConnection;
 
-        //    connection.openConnection();
+        public Boolean ExecQuery(MySqlCommand command)
+        {
+            command.Connection = connection.getConnection;
 
-        //    if (command.ExecuteNonQuery() == 1)
-        //    {
-        //        connection.closeConnection();
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        connection.closeConnection();
-        //        return false;
-        //    }
-        //}
+            connection.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connection.closeConnection();
+                return true;
+            }
+            else
+            {
+                connection.closeConnection();
+                return false;
+            }
+        }
 
         // get data in table format
         public DataTable getData(MySqlCommand command)

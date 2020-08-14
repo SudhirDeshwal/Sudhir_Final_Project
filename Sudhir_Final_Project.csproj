@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="Classes\CrudOperation.cs" />
     <Compile Include="Classes\DB_CONNECTION.cs" />
+    <Compile Include="Classes\PROPERTY_TYPE.cs" />
+    <Compile Include="Classes\THE_PROPERTY.cs" />
     <Compile Include="Forms\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +63,18 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PropertiesListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PropertiesListForm.designer.cs">
+      <DependentUpon>PropertiesListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ThePropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ThePropertyForm.designer.cs">
+      <DependentUpon>ThePropertyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Home.resx">
@@ -68,6 +82,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PropertiesListForm.resx">
+      <DependentUpon>PropertiesListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThePropertyForm.resx">
+      <DependentUpon>ThePropertyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
