@@ -23,5 +23,11 @@ namespace Sudhir_Final_Project.Forms
             ThePropertyForm propertyF = new ThePropertyForm();
             propertyF.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaleForm salef = new SaleForm();
+            salef.Show();
+        }
     }
 }

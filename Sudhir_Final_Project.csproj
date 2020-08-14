@@ -50,6 +50,7 @@
     <Compile Include="Classes\CrudOperation.cs" />
     <Compile Include="Classes\DB_CONNECTION.cs" />
     <Compile Include="Classes\PROPERTY_TYPE.cs" />
+    <Compile Include="Classes\SALE.cs" />
     <Compile Include="Classes\THE_PROPERTY.cs" />
     <Compile Include="Forms\Home.cs">
       <SubType>Form</SubType>
@@ -77,6 +78,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\SaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SaleForm.designer.cs">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +106,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Forms\SaleForm.resx">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

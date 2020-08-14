@@ -268,5 +268,10 @@ namespace Csharp_Real_Estate_App.Forms
         {
 
         }
+
+        private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
