@@ -29,5 +29,10 @@ namespace Sudhir_Final_Project.Forms
             SaleForm salef = new SaleForm();
             salef.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

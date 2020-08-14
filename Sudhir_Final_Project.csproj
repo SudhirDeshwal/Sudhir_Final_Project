@@ -128,5 +128,17 @@
   <ItemGroup>
     <Folder Include="images\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\- William Alingham.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick-wall-185085_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lukas-mayer-785429.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

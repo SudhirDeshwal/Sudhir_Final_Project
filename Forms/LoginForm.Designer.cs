@@ -163,8 +163,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Sudhir_Final_Project.Properties.Resources.adult_1867665_1280;
-            this.ClientSize = new System.Drawing.Size(838, 502);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = global::Sudhir_Final_Project.Properties.Resources.pexels_lukas_mayer_785429;
+            this.ClientSize = new System.Drawing.Size(839, 499);
             this.Controls.Add(this.lblinvaliddetails);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
@@ -177,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
