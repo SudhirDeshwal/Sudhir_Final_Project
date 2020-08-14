@@ -33,10 +33,10 @@ namespace Csharp_Real_Estate_App.Classes
 
         public THE_PROPERTY() { }
 
-        public THE_PROPERTY(int ID, int TYPE,int SIZE, int AGE, int BEDROOMS, int BATHROOMS, string ADDRESS,
+        public THE_PROPERTY(int id , int TYPE,int SIZE, int AGE, int BEDROOMS, int BATHROOMS, string ADDRESS,
                             string PRICE, string COMMENT, bool BALCONY, bool BACKYARD, bool GARAGE,bool FIREPLACE, bool POOL)
         {
-            this.id = ID;
+          //  this.id = ID;
             this.type = TYPE;
             this.size = SIZE;
             this.price = PRICE;
@@ -55,9 +55,10 @@ namespace Csharp_Real_Estate_App.Classes
         // insert a new property
         public Boolean insertProperty(THE_PROPERTY property)
         {
-            MySqlCommand command = new MySqlCommand("INSERT INTO `the_property`(`type`, `square_feet`, `price`, `address`, `bedrooms`, `bathrooms`, `age`, `balcony`, `backyard`, `pool`, `garage`, `fireplace`, `comment`) VALUES (@tp,@size,@owner,@price,@adrs,@bedr,@bathr,@age,@balc,@backy,@pool,@grg,@fire,@cmnt)");
+            MySqlCommand command = new MySqlCommand("INSERT INTO `the_property`(`type`, `square_feet`, `price`, `address`, `bedrooms`, `bathrooms`, `age`, `balcony`, `backyard`, `pool`, `garage`, `fireplace`, `comment`) VALUES (@tp,@size,@price,@adrs,@bedr,@bathr,@age,@balc,@backy,@pool,@grg,@fire,@cmnt)");
 
             // (@tp,@size,@owner,@price,@adrs,@bedr,@bathr,@age,@balc,@backy,@pool,@grg,@fire,@cmnt)
+          //  command.Parameters.Add("@tp", MySqlDbType.Int32).Value = property.id;
             command.Parameters.Add("@tp", MySqlDbType.Int32).Value = property.type;
             command.Parameters.Add("@size", MySqlDbType.VarChar).Value = property.size;
            // command.Parameters.Add("@owner", MySqlDbType.Int32).Value = property.ownerId;

@@ -34,6 +34,7 @@ namespace Csharp_Real_Estate_App.Forms
         {
             try
             {
+               // int ID = Convert.ToInt32(comboBoxType.SelectedValue.ToString());
                 int type = Convert.ToInt32(comboBoxType.SelectedValue.ToString());
                 int size = Convert.ToInt32(textBoxSize.Text);
                 string price = textBoxPrice.Text;
@@ -49,11 +50,11 @@ namespace Csharp_Real_Estate_App.Forms
                 Boolean hasPool = checkBoxPool.Checked;
                 Boolean hasFireplace = checkBoxFireplace.Checked;
 
-                // MessageBox.Show(" *Balcony - " + hasBalcony + " *Balckyard - " + hasBackyard + " *Garage - " + hasGarage + " *Pool - " + hasPool + " *Fireplace - " + hasFireplace);
+                MessageBox.Show(" *Balcony - " + hasBalcony + " *Balckyard - " + hasBackyard + " *Garage - " + hasGarage + " *Pool - " + hasPool + " *Fireplace - " + hasFireplace);
 
                 if (verifTextBoxes())
                 {
-                    if (property.insertProperty(new Classes.THE_PROPERTY(0, type,size, age, bedrooms, bathrooms, address, price, comment, hasBalcony, hasBackyard, hasGarage, hasFireplace, hasPool)))
+                    if (property.insertProperty(new Classes.THE_PROPERTY(0,type,size, age, bedrooms, bathrooms, address, price, comment, hasBalcony, hasBackyard, hasGarage, hasFireplace, hasPool)))
                     {
                         MessageBox.Show("New Property Added", "Add Property", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
