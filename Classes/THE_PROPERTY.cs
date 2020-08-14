@@ -33,10 +33,10 @@ namespace Csharp_Real_Estate_App.Classes
 
         public THE_PROPERTY() { }
 
-        public THE_PROPERTY(int id , int TYPE,int SIZE, int AGE, int BEDROOMS, int BATHROOMS, string ADDRESS,
+        public THE_PROPERTY(int ID , int TYPE,int SIZE, int AGE, int BEDROOMS, int BATHROOMS, string ADDRESS,
                             string PRICE, string COMMENT, bool BALCONY, bool BACKYARD, bool GARAGE,bool FIREPLACE, bool POOL)
         {
-          //  this.id = ID;
+           this.id = ID;
             this.type = TYPE;
             this.size = SIZE;
             this.price = PRICE;

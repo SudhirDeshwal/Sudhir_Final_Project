@@ -14,6 +14,7 @@ namespace Csharp_Real_Estate_App.Classes
 
         CrudOperation func = new CrudOperation();
 
+
         // insert a new type
         public Boolean insertType(string name, string description)
         {
@@ -50,6 +51,7 @@ namespace Csharp_Real_Estate_App.Classes
             return func.ExecQuery(command);
 
         }
+
 
 
         // get all types
